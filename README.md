@@ -16,7 +16,7 @@ When you clone down this project, the component `<ClassContainer />` will have a
 - As a user, you should be able to select a class from the dropdown menu which will place a call to the API endpoint for students in that class.
 - As a user, you should be able to edit information for a single student which will make a call to update the API and render on the front end. Assume that you need to send all the student information the API to process the edit properly.
 
-![example project](...)
+![example project](public/app.gif)
 
 Use the above gif as an example of how the app should function.
 
