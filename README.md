@@ -20,7 +20,7 @@ When you clone down this project, the component `<ClassContainer />` will have a
 
 The endpoints you need to hit are:
 - Get: http://localhost:3001/courses/:id
-- Post: http://localhost:3001/students/:id.
+- Post: http://localhost:3001/students/:id
 
 Below are the deliverables you should create. _Please complete this list in order, as you will be graded based on how many of these are completed_.
 
