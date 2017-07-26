@@ -4,14 +4,11 @@ const Student = () => {
 
   return (
     <tr>
-      <td>{ "...your code here" }</td>
-      <td>{ "...your code here" }</td>
-      <td>{ "...your code here" }</td>
+      <td>"...your code here"</td>
+      <td>"...your code here"</td>
+      <td>"...your code here"</td>
       <td>
-        <button
-          className="ui button left"
-          onClick={ "...your code here" }
-        >
+        <button className="ui button left">
           Edit
         </button>
       </td>

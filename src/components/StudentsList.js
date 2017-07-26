@@ -29,7 +29,7 @@ const StudentsList = () => {
           </th>
         </tr>
 
-         {/* "... your code here..." */}
+         "... your code here..."
 
       </tbody>
     </table>

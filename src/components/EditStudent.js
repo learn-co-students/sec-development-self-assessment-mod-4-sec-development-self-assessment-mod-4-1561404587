@@ -8,10 +8,6 @@ class EditStudent extends Component {
     }
   }
 
-  onChange = () => {
-    //your code here
-  }
-
   render() {
 
     return (
@@ -23,27 +19,21 @@ class EditStudent extends Component {
               <input
                 id="name"
                 type="text"
-                value={ "...your code here" }
                 placeholder="name"
-                onChange={ "...your code here" }
               />
             </div>
             <div className="four wide field">
               <input
                 id="class_year"
                 type="number"
-                value={ "...your code here" }
                 placeholder="class year"
-                onChange={ "...your code here" }
               />
             </div>
             <div className="four wide field">
               <input
                 id="percentage"
                 type="number"
-                value={ "...your code here" }
                 placeholder="percentage"
-                onChange={ "...your code here" }
               />
             </div>
             <button className="ui button" type="submit">Submit</button>

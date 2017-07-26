@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import CourseSelector from './CourseSelector'
-import CourseData from './CourseData'
 import EditStudent from './EditStudent'
 import StudentsList from './StudentsList'
 import courseList from '../courseList'
@@ -42,41 +41,20 @@ class CourseContainer extends Component {
     }
   }
 
-  handleCourseChange = () => {
-    // your code here
-  }
-
-  handleSubmit = () => {
-    // your code here
-  }
-
-  handleClick = () => {
-    // your code here
-  }
-
   render() {
 
     return (
       <div className="ui grid container">
+      
+        <div className="ui center aligned header sixteen wide column">
+          "Course Title"
+        </div>
 
-        <CourseSelector
-          handleChange={ "...your code here" }
-        />
+        <CourseSelector/>
 
-        <CourseData
-          courseAverage={ "...your code here" }
-          currentCourse={ "...your code here" }
-        />
+        <EditStudent/>
 
-        <EditStudent
-          student={ "...your code here" }
-          handleSubmit={ "...your code here" }
-        />
-
-        <StudentsList
-          students={ "...your code here" }
-          handleClick={ "...your code here" }
-        />
+        <StudentsList/>
 
       </div>
     )
