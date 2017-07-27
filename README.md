@@ -16,7 +16,7 @@ https://github.com/learn-co-students/immersive-assessment-react-alt-first-round-
 
 ## Deliverables
 
-When you clone down this project, the component `<ClassContainer />` will have an initial default state.  Use this data to get the students rendering.  Once that is complete, you can replace that initial students state with data you fetch from the API.
+When you clone down this project, the component `<CourseContainer />` will have an initial default state.  Use this data to get the students rendering.  Once that is complete, you can replace that initial students state with data you fetch from the API.
 
 The endpoints you need to hit are:
 - Get: http://localhost:3001/courses/:id
