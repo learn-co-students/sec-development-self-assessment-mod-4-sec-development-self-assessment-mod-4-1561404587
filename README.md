@@ -29,6 +29,7 @@ Below are the deliverables you should create. _Please complete this list in orde
 3) After that is working, update the students state with the JSON you fetch from the endpoint for each course: http://localhost:3001/courses/:id. Make sure you know how the data you receive from the API is structured.
 5) Make student information editable using the edit form.
 6) On submit, persist the updated student information to the API using a post request to http://localhost:3001/students/:id. The updated student information should also be reflected on the front end.
+7) Note: All your coding should be done in this repo. You should not need to make any changes to the back end and there is no need to push the back end up upon submission.
 
 ![example project](public/app.gif)
 
