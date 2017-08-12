@@ -25,11 +25,12 @@ The endpoints you need to hit are:
 Below are the deliverables you should create. _Please complete this list in order, as you will be graded based on how many of these are completed_.
 
 1) Get the list of students to display on the page given the default state data.
-2) Ensure that the dropdown course menu updates the state. You should also show the name of the current course as a header in CourseContainer.
-3) After that is working, update the students state with the JSON you fetch from the endpoint for each course: http://localhost:3001/courses/:id. Make sure you know how the data you receive from the API is structured.
-5) Make student information editable using the edit form.
+2) Ensure that the dropdown course menu updates the currentCourse state in CourseContainer. You should also show the name of the current course as a header in CourseContainer.
+3) On change of the dropdown course menu, a call should be placed to the API to update the student state. This information can be retrieved from the endpoint for each course: http://localhost:3001/courses/:id. Make sure you know how the data you receive from the API is structured.
+5) Make student information editable using the edit form. Clicking the button next to a student should populate the edit form with information for that student. Make this form a controlled component.
 6) On submit, persist the updated student information to the API using a post request to http://localhost:3001/students/:id. The updated student information should also be reflected on the front end.
-7) Note: All your coding should be done in this repo. You should not need to make any changes to the back end and there is no need to push the back end up upon submission.
+7) If you have time, refactor the Edit Student form into its own component.
+8) Note: All your coding should be done in this repo. You should not need to make any changes to the back end and there is no need to push the back end up upon submission.
 
 ![example project](public/app.gif)
 
