@@ -4,11 +4,13 @@
 
 For this project, you’ll be building out a React application that displays a list of student grades.
 
-Part of what this code challenge is testing is your ability to follow given instructions. While you will have some freedom in how you implement the features, be sure to carefully read the directions and follow the steps in order to build the application. You will be assessed based on how many of the deliverables you complete and _completing them out of order will result in a lower score_.
+Part of what this code challenge is testing is your ability to follow given instructions. While you will have some freedom in how you implement the features, be sure to carefully read the directions and follow the steps in order to build the application. **It would be better to deliver 4 working and 3 not-working deliverables rather 7 half-working deliverables.**
 
 ## Setup
-1) First fork and clone down the backend repository and get the API running locally. The repo and directions to run it locally can be found here:
-https://github.com/learn-co-students/immersive-assessment-react-alt-first-round-backend-web-YOUR_CLASS_START_DATE
+1) First fork and clone down the backend repository found here: https://github.com/learn-co-curriculum/immersive-assessment-react-alt-first-round-backendand and get the API running locally. Make sure you:
+  - Make sure you have Postgres running. (You should see the elephant in the menu bar at the top of your screen.)
+  - Run `rake db:setup`.
+  - Remember that your frontend React app is running on port 3000. You should therefore specify to run your Rails server on a different port. To do this, start up the server with `rails s -p 3001`. Your server will be running on http://localhost:3001.
 2) Fork and clone this repository.
 3) After cloning down the project, run `npm install`.
 4) You can boot up the server with `npm start`. It will run on `localhost:3000`.
@@ -19,16 +21,16 @@ https://github.com/learn-co-students/immersive-assessment-react-alt-first-round-
 When you clone down this project, the component `<CourseContainer />` will have an initial default state.  Use this data to get the students rendering.  Once that is complete, you can replace that initial students state with data you fetch from the API.
 
 The endpoints you need to hit are:
-- Get: http://localhost:3001/courses/:id
-- Post: http://localhost:3001/students/:id
+- GET: http://localhost:3001/courses/:id
+- PATCH: http://localhost:3001/students/:id
 
-Below are the deliverables you should create. _Please complete this list in order, as you will be graded based on how many of these are completed_.
+Below are the deliverables you should create.
 
 1) Get the list of students to display on the page given the default state data.
 2) Ensure that the dropdown course menu updates the currentCourse state in CourseContainer. You should also show the name of the current course as a header in CourseContainer.
 3) On change of the dropdown course menu, a call should be placed to the API to update the student state. This information can be retrieved from the endpoint for each course: http://localhost:3001/courses/:id. Make sure you know how the data you receive from the API is structured.
 5) Make student information editable using the edit form. Clicking the button next to a student should populate the edit form with information for that student. Make this form a controlled component.
-6) On submit, persist the updated student information to the API using a post request to http://localhost:3001/students/:id. The updated student information should also be reflected on the front end.
+6) On submit, persist the updated student information to the API using a PATCH request to http://localhost:3001/students/:id. The updated student information should also be reflected on the front end. (When using `fetch` to make a PATCH request, make sure you capitalize the `{method: 'PATCH'}`)
 7) If you have time, refactor the Edit Student form into its own component.
 8) Note: All your coding should be done in this repo. You should not need to make any changes to the back end and there is no need to push the back end up upon submission.
 
