@@ -21,8 +21,58 @@ When you clone down this project, the component `<CourseContainer />` will have 
 The endpoints you need to hit are:
 
 * GET: https://bayside-student-lister.herokuapp.com/api/v1/courses/:id
-* PATCH: https://bayside-student-lister.herokuapp.com/api/v1/students/:id
+Example GET fetch for course 1:
+```
+GET 'https://bayside-student-lister.herokuapp.com/api/v1/courses/1'
 
+Example Response:
+  {
+    "id": 1,
+    "name": "Knitting Hats for Cats",
+    "instructor": "Tim Campbell",
+    "semester": "Winter 2017",
+    "students": [
+      {
+        "id": 10,
+        "name": "Irwin Ledner",
+        "class_year": 12,
+        "percentage": 91
+      },
+      {
+        "id": 13,
+        "name": "Jordane Glover",
+        "class_year": 11,
+        "percentage": 72
+      },
+      ...
+    ]
+  }
+```
+* PATCH: https://bayside-student-lister.herokuapp.com/api/v1/students/:id
+Example PATCH for student 1:
+```
+PATCH: https://bayside-student-lister.herokuapp.com/api/v1/students/1
+
+Required keys in the body of the request:
+{
+  class_year: <class_year value from edit form>,
+  name: <name value from edit form>,
+  percentage: <percentage value from edit form>
+}
+
+Required Headers
+{
+  "Content-Type": "application/json"
+}
+
+Example Response:
+{
+  class_year: 10,
+  id: 15,
+  name: "Leopoldo O'Keefe",
+  percentage: 93
+}
+```
 Below are the deliverables you should create.
 
 1. Get the list of students to display on the page given the default state data.
