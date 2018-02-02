@@ -20,9 +20,8 @@ When you clone down this project, the component `<CourseContainer />` will have 
 
 The endpoints you need to hit are:
 
-* Student Index - GET: https://bayside-student-lister.herokuapp.com/api/v1/courses
-* Student Show - GET: https://bayside-student-lister.herokuapp.com/api/v1/courses/:id
-* Student Update - PATCH: https://bayside-student-lister.herokuapp.com/api/v1/students/:id
+* GET: https://bayside-student-lister.herokuapp.com/api/v1/courses/:id
+* PATCH: https://bayside-student-lister.herokuapp.com/api/v1/students/:id
 
 Below are the deliverables you should create.
 
