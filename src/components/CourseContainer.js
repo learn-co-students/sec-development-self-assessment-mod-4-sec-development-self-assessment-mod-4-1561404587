@@ -1,59 +1,30 @@
-import React, { Component } from 'react'
-import CourseSelector from './CourseSelector'
-import StudentsList from './StudentsList'
-import courseList from '../courseList'
+import React, { Component } from "react";
+import CourseSelector from "./CourseSelector";
+import StudentsList from "./StudentsList";
+import courseList from "../courseList";
 
 class CourseContainer extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      students: [{
-          id: 1,
-          name: "Tom Foolery",
-          class_year: 10,
-          percentage: 88
-        }, {
-          id: 2,
-          name: "Juno Forte",
-          class_year: 11,
-          percentage: 95
-        }, {
-          id: 3,
-          name: "Eli Frizzel",
-          class_year: 12,
-          percentage: 86
-        }, {
-          id: 4,
-          name: "Phil George",
-          class_year: 9,
-          percentage: 77
-        }, {
-          id: 5,
-          name: "Anna Cornell",
-          class_year: 11,
-          percentage: 98
-        }
-      ],
-      currentCourse: {},
-      currentStudent: {}
-    }
-  }
+  state = {
+    students: [],
+    currentCourse: {},
+    currentStudent: {}
+  };
 
   render() {
-
     return (
       <div className="ui grid container">
-
         <div className="ui center aligned header sixteen wide column">
           {/* Course Title Here */}
           Course Title
         </div>
 
-        <CourseSelector/>
+        <CourseSelector />
 
         {/* Edit Form */}
-        <form className="ui form center aligned sixteen wide column" onSubmit={''}>
+        <form
+          className="ui form center aligned sixteen wide column"
+          onSubmit={""}
+        >
           <div className="inline fields">
             <div className="four wide field">
               <input
@@ -79,15 +50,16 @@ class CourseContainer extends Component {
                 onChange={"your code here"}
               />
             </div>
-            <button className="ui button" type="submit">Submit</button>
+            <button className="ui button" type="submit">
+              Submit
+            </button>
           </div>
         </form>
 
-        <StudentsList/>
-
+        <StudentsList />
       </div>
-    )
+    );
   }
 }
 
-export default CourseContainer
+export default CourseContainer;
