@@ -23,7 +23,7 @@ When you clone down this project, the component `<CourseContainer />` will have 
 The endpoints you need to hit are:
 
 * GET: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses`
-Returns an array of all courses. Example response: 
+Returns an array of all courses.
 ```
 GET: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses`
 
@@ -57,7 +57,7 @@ Example Response:
 ```
 
 * GET: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses/:id`
-Example GET fetch for course 1:
+Returns a single course and all of its students. Example GET fetch for course 1:
 ```
 GET 'https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses/:id'
 
@@ -85,7 +85,7 @@ Example Response:
   }
 ```
 * PATCH: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/students/:id`
-Example PATCH for student 1:
+Returns updated student data. Example PATCH for student 1:
 ```
 PATCH: ' https://bayside-high.herokuapp.com/api/v1/user/:user_id/students/:id'
 
