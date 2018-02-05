@@ -16,9 +16,7 @@ Before the code challenge begins, you will receive a user ID from your instructo
 4. The backend for this code challenge is hosted on heroku at: https://bayside-high.herokuapp.com/, and the specific endpoints available for use are listed below in the deliverables section.
 5. The app uses [Semantic UI](https://semantic-ui.com/) for styling. If you see any unfamiliar classNames on some components, don't sweat! That's coming from Semantic UI and you shouldn't need to touch it.
 
-## Deliverables
-
-When you clone down this project, the component `<CourseContainer />` will have an initial default state. Use this data to get the students rendering. Once that is complete, you can replace that initial students state with data you fetch from the API.
+## Endpoints
 
 The endpoints you need to hit are:
 
@@ -109,6 +107,8 @@ Example Response:
   percentage: 93
 }
 ```
+
+## Deliverables
 Below are the deliverables you should create.
 
 1. Get the list of courses from `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses` and populate the dropdown menu.
