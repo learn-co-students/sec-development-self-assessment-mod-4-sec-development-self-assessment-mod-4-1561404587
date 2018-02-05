@@ -22,10 +22,10 @@ When you clone down this project, the component `<CourseContainer />` will have 
 
 The endpoints you need to hit are:
 
-* GET: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses`
+* GET: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses`
 Returns an array of all courses.
 ```
-GET: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses`
+GET: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses`
 
 Example Response:
   [
@@ -56,10 +56,10 @@ Example Response:
   ]
 ```
 
-* GET: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses/:id`
+* GET: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses/:id`
 Returns a single course and all of its students. Example GET fetch for course 1:
 ```
-GET 'https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses/:id'
+GET 'https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses/:id'
 
 Example Response:
   {
@@ -84,10 +84,10 @@ Example Response:
     ]
   }
 ```
-* PATCH: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/students/:id`
+* PATCH: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/students/:id`
 Returns updated student data. Example PATCH for student 1:
 ```
-PATCH: 'https://bayside-high.herokuapp.com/api/v1/user/:user_id/students/:id'
+PATCH: 'https://bayside-high.herokuapp.com/api/v1/users/:user_id/students/:id'
 
 Required keys in the body of the request:
 {
@@ -111,11 +111,11 @@ Example Response:
 ```
 Below are the deliverables you should create.
 
-1. Get the list of courses from `https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses` and populate the dropdown menu.
+1. Get the list of courses from `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses` and populate the dropdown menu.
 2. Ensure that the dropdown course menu updates the currentCourse state in CourseContainer. You should also show the name of the current course as a header in CourseContainer.
-3. On change of the dropdown course menu, a call should be placed to the API to update the student state. This information can be retrieved from the endpoint for each course: `https://bayside-high.herokuapp.com/api/v1/user/:user_id/courses/:id`. Make sure you know how the data you receive from the API is structured.
+3. On change of the dropdown course menu, a call should be placed to the API to update the student state. This information can be retrieved from the endpoint for each course: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses/:id`. Make sure you know how the data you receive from the API is structured.
 4. Make student information editable using the edit form. Clicking the button next to a student should populate the edit form with information for that student. Make this form a controlled component.
-5. On submit, persist the updated student information to the API using a PATCH request to `https://bayside-high.herokuapp.com/api/v1/user/:user_id/students/:id`. The updated student information should also be reflected on the front end. (When using `fetch` to make a PATCH request, make sure you capitalize the `{method: 'PATCH'}`)
+5. On submit, persist the updated student information to the API using a PATCH request to `https://bayside-high.herokuapp.com/api/v1/users/:user_id/students/:id`. The updated student information should also be reflected on the front end. (When using `fetch` to make a PATCH request, make sure you capitalize the `{method: 'PATCH'}`)
 6. If you have time, refactor the Edit Student form into its own component.
 7. Note: All your coding should be done in this repo. You should not need to make any changes to the back end and there is no need to push the back end up upon submission.
 
