@@ -3,7 +3,7 @@ import Student from "./Student";
 
 const StudentsList = () => {
   return (
-    <table className="ui celled striped padded">
+    <table className="ui celled striped padded table">
       <tbody>
         <tr>
           <th>
