@@ -13,7 +13,7 @@ const EditStudent = () => {
             id="name"
             type="text"
             value={""}
-            onChange={"your code here"}
+            onChange={()=> console.log('handle change')}
           />
         </div>
         <div className="four wide field">
@@ -21,7 +21,7 @@ const EditStudent = () => {
             id="class_year"
             type="number"
             value={""}
-            onChange={"your code here"}
+            onChange={()=> console.log('handle change')}
           />
         </div>
         <div className="four wide field">
@@ -29,7 +29,7 @@ const EditStudent = () => {
             id="percentage"
             type="number"
             value={""}
-            onChange={"your code here"}
+            onChange={()=> console.log('handle change')}
           />
         </div>
         <button className="ui button" type="submit">

@@ -112,7 +112,7 @@ Example Response:
 ## Deliverables
 Below are the deliverables you should create.
 
-1. Get the list of courses from `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses` and populate the dropdown menu. (If you can't get the fetch working, try visiting that URL in your browser and just copying the data and pasting it into your state so you can move onto the next steps.)
+1. Get the list of courses from `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses`. (If you can't get the fetch working, try visiting that URL in your browser and just copying the data and pasting it into your state so you can move onto the next steps.) There is some code in CourseSelector that is commented out so as to not break your app. Once you have access to the courses, uncomment that code and hook up the dropdown menu to display those course options.
 2. Ensure that the dropdown course menu updates the currentCourse state in CourseContainer. You should also show the name of the current course as a header in CourseContainer.
 3. On change of the dropdown course menu, a call should be placed to the API to load all the students for that course into the students state. This information can be retrieved from the endpoint for each course: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses/:id`. Make sure you know how the data you receive from the API is structured.
 4. Make student information editable using the edit form. Clicking the button next to a student should populate the edit form with information for that student by updating state. Make this form a controlled component.

@@ -19,7 +19,7 @@ class CourseContainer extends Component {
           Course Title
         </div>
 
-        <CourseSelector courseList={[]} />
+        <CourseSelector />
 
         <EditStudent />
 
