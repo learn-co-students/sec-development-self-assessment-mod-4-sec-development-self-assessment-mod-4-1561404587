@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Student = () => {
+const EditStudent = () => {
 
   return (
     <form
@@ -40,4 +40,4 @@ const Student = () => {
   )
 }
 
-export default Student
+export default EditStudent
