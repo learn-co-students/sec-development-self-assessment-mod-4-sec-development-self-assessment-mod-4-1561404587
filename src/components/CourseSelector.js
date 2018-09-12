@@ -1,7 +1,6 @@
 import React from "react";
-import courseList from "../courseList";
 
-const CourseSelector = () => {
+const CourseSelector = ({courseList}) => {
   return (
     <div className="sixteen wide column">
       <select className="ui dropdown">

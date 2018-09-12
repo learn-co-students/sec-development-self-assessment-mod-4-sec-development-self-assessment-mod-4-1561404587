@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import CourseSelector from "./CourseSelector";
 import StudentsList from "./StudentsList";
-import courseList from "../courseList";
 
 class CourseContainer extends Component {
   state = {
     students: [],
     currentCourse: {},
-    currentStudent: {}
-  };
+    currentStudent: {},
+    courses: []
+  }
 
   render() {
     return (
@@ -18,7 +18,7 @@ class CourseContainer extends Component {
           Course Title
         </div>
 
-        <CourseSelector />
+        <CourseSelector courseList={[]} />
 
         {/* Edit Form */}
         <form
