@@ -12,24 +12,18 @@ const EditStudent = () => {
           <input
             id="name"
             type="text"
-            value={""}
-            onChange={()=> console.log('handle change')}
           />
         </div>
         <div className="four wide field">
           <input
             id="class_year"
             type="number"
-            value={""}
-            onChange={()=> console.log('handle change')}
           />
         </div>
         <div className="four wide field">
           <input
             id="percentage"
             type="number"
-            value={""}
-            onChange={()=> console.log('handle change')}
           />
         </div>
         <button className="ui button" type="submit">

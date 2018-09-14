@@ -4,7 +4,7 @@
 
 For this project, you’ll be building out a React application that displays a list of student grades.
 
-Part of what this code challenge is testing is your ability to follow given instructions. While you will have some freedom in how you implement the features, be sure to carefully read the directions and follow the steps in order to build the application. **It would be better to deliver 4 working and 1 not-working deliverables rather 5 half-working deliverables.**
+Part of what this code challenge is testing is your ability to follow given instructions. While you will have some freedom in how you implement the features, be sure to carefully read the directions and follow the steps in order to build the application. **It would be better to deliver 3 working and 2 not-working deliverables rather 5 half-working deliverables.**
 
 Before the code challenge begins, you will receive a user ID from your instructors. You will use this anywhere you see `user_id` to get access to your own set of data. If you do not yet have an ID, please let an instructor know.
 
@@ -18,7 +18,7 @@ Before the code challenge begins, you will receive a user ID from your instructo
 
 ## Endpoints
 
-The endpoints you need to hit are listed below. *Note that other routes other than the ones below do not exist on this API and visiting them will return you an error page.*
+The endpoints you need to hit are listed below. *Note: the routes below are the only routes that exist on this API. If you try to visit other routes, you'll get an error page.*
 
 * GET: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses`
 Returns an array of all courses.
