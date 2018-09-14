@@ -3,14 +3,14 @@ import Student from "./Student";
 
 const StudentsList = () => {
   return (
-    <table className="ui celled striped padded">
+    <table className="ui celled striped padded table">
       <tbody>
         <tr>
           <th>
             <h3 className="ui center aligned header">Student Name</h3>
           </th>
           <th>
-            <h3 className="ui center aligned header">Student Grade</h3>
+            <h3 className="ui center aligned header">Class Year</h3>
           </th>
           <th>
             <h3 className="ui center aligned header">Course Percentage</h3>

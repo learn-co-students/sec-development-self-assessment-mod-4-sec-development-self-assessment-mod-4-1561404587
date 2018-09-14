@@ -4,7 +4,7 @@
 
 For this project, you’ll be building out a React application that displays a list of student grades.
 
-Part of what this code challenge is testing is your ability to follow given instructions. While you will have some freedom in how you implement the features, be sure to carefully read the directions and follow the steps in order to build the application. **It would be better to deliver 4 working and 3 not-working deliverables rather 7 half-working deliverables.**
+Part of what this code challenge is testing is your ability to follow given instructions. While you will have some freedom in how you implement the features, be sure to carefully read the directions and follow the steps in order to build the application. **It would be better to deliver 3 working and 2 not-working deliverables rather 5 half-working deliverables.**
 
 Before the code challenge begins, you will receive a user ID from your instructors. You will use this anywhere you see `user_id` to get access to your own set of data. If you do not yet have an ID, please let an instructor know.
 
@@ -18,7 +18,7 @@ Before the code challenge begins, you will receive a user ID from your instructo
 
 ## Endpoints
 
-The endpoints you need to hit are:
+The endpoints you need to hit are listed below. *Note: the routes below are the only routes that exist on this API. If you try to visit other routes, you'll get an error page.*
 
 * GET: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses`
 Returns an array of all courses.
@@ -96,7 +96,8 @@ Required keys in the body of the request:
 
 Required Headers
 {
-  "Content-Type": "application/json"
+  "Content-Type": "application/json",
+  "Accept": "application/json"
 }
 
 Example Response:
@@ -111,7 +112,7 @@ Example Response:
 ## Deliverables
 Below are the deliverables you should create.
 
-1. Get the list of courses from `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses` and populate the dropdown menu.
+1. Get the list of courses from `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses`. (If you can't get the fetch working, try visiting that URL in your browser and just copying the data and pasting it into your state so you can move onto the next steps.) There is some code in CourseSelector that is commented out so as to not break your app. Once you have access to the courses, uncomment that code and hook up the dropdown menu to display those course options.
 2. Ensure that the dropdown course menu updates the currentCourse state in CourseContainer. You should also show the name of the current course as a header in CourseContainer.
 3. On change of the dropdown course menu, a call should be placed to the API to load all the students for that course into the students state. This information can be retrieved from the endpoint for each course: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses/:id`. Make sure you know how the data you receive from the API is structured.
 4. Make student information editable using the edit form. Clicking the button next to a student should populate the edit form with information for that student by updating state. Make this form a controlled component.

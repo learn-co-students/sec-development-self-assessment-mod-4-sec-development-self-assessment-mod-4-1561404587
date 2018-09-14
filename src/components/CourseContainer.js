@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import CourseSelector from "./CourseSelector";
-import StudentsList from "./StudentsList";
-import courseList from "../courseList";
+import React, { Component } from "react"
+import CourseSelector from "./CourseSelector"
+import EditStudent from "./EditStudent"
+import StudentsList from "./StudentsList"
 
 class CourseContainer extends Component {
   state = {
     students: [],
     currentCourse: {},
-    currentStudent: {}
-  };
+    currentStudent: {},
+    courses: []
+  }
 
   render() {
     return (
@@ -20,46 +21,12 @@ class CourseContainer extends Component {
 
         <CourseSelector />
 
-        {/* Edit Form */}
-        <form
-          className="ui form center aligned sixteen wide column"
-          onSubmit={""}
-        >
-          <div className="inline fields">
-            <div className="four wide field">
-              <input
-                id="name"
-                type="text"
-                value={""}
-                onChange={"your code here"}
-              />
-            </div>
-            <div className="four wide field">
-              <input
-                id="class_year"
-                type="number"
-                value={""}
-                onChange={"your code here"}
-              />
-            </div>
-            <div className="four wide field">
-              <input
-                id="percentage"
-                type="number"
-                value={""}
-                onChange={"your code here"}
-              />
-            </div>
-            <button className="ui button" type="submit">
-              Submit
-            </button>
-          </div>
-        </form>
+        <EditStudent />
 
         <StudentsList />
       </div>
-    );
+    )
   }
 }
 
-export default CourseContainer;
+export default CourseContainer
